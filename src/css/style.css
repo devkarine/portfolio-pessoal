@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Libre+Baskerville:wght@400;700&display=swap");
+
+body {
+  font-size: 1.5rem;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: var(--bg-02);
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+h1{
+  font-family: "Inspiration", cursive;
+  color: var(--fs-02);
+  font-size: clamp(7rem, 10vw, 10rem);
+  filter: drop-shadow(var(--shadow));
+  padding-bottom: 2rem;
+}
+
+h2 {
+    font-family: "Inspiration", cursive;
+    color: var(--fs-02);
+    font-size: 8rem;
+    filter: drop-shadow(var(--shadow));
+    padding-bottom: 2rem;
+  }
+
+  h3 {
+    color: var(--fs-02);
+    font-size: 2rem;
+    filter: drop-shadow(var(--shadow));
+    padding-bottom: 1rem;
+  }
+
+header {
+  background-color: var(--bg-01);
+  padding: 2rem 5rem;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container .logo {
+  width: 15rem;
+}
+
+header .container nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+header .container nav ul li a:hover {
+  color: var(--fs-02);
+  font-style: italic;
+}
+
+
+.hero .container {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
+  height: 50rem;
+  text-align: center;
+}
+
+.sobre .container .profile img{
+    width: 35rem;
+    
+}
+
+.sobre .container .descricao p {
+  width: 50rem;
+}
+
+
+
+.skills .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+    
+}
+
+.skills .container .icons,
+footer .container .icons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem 0;
+}
+
+.skills .container .icons span,
+footer .container .icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 2rem;
+    background-color: var(--buton);
+}
+
+.skills .container .icons span i,
+footer .container .icons a i{
+    color: var(--bg-02);
+    font-size: 4rem;
+}
+
+
+.projetos .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.projetos .container .wrapper-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+
+.projetos .container .wrapper-projetos .card-projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: var(--bg-01);
+    border-radius: 1rem;
+    width: 34rem;
+    height: 45rem;
+    padding: 3rem 0;
+}
+
+.projetos .container .wrapper-projetos .card-projetos .btn{
+    display: flex;
+    gap: 2rem;
+}
+
+.projetos .container .wrapper-projetos .card-projetos .btn a{
+    background-color: var(--buton);
+    color: var(--bg-02);
+    border-radius: 1rem;
+    width: 12rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.projetos .container .wrapper-projetos .card-projetos .btn a:hover{
+    background-color: var(--hoover);
+}
+
+.projetos .container .wrapper-projetos .card-projetos .tecnologias{
+    display: flex;
+    gap: 2rem;
+}
+
+.projetos .container .wrapper-projetos .card-projetos .tecnologias span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: var(--buton);
+
+}
+
+.projetos .container .wrapper-projetos .card-projetos span i{
+    color: var(--bg-02);
+    font-size: 3rem;
+}
+
+.projetos .container .wrapper-projetos .card-projetos .gif{
+    border-radius: 1rem;
+    width: 30rem;
+    height: 20rem;
+}
+
+footer{
+    background-color: var(--bg-01);
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+    height:30rem;
+    padding: 2rem 0;
+}
+
+footer .container p{
+    font-size: 0.9rem;
+    color: var(--fs-02);
+}

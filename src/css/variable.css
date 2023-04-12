@@ -1,0 +1,10 @@
+:root {
+  --bg-01: #c8dad9;
+  --bg-02: #edf3f2;
+  --buton: rgb(100, 148, 146);
+  --hoover: #3c3c3c;
+  --fs-01: #13131b;
+  --fs-02: #47716b;
+
+  --shadow: 0.3rem 0.3rem 0.5rem #568585;
+}

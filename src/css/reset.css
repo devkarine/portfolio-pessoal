@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  color: var(--fs-01);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
