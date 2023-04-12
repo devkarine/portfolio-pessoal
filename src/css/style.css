@@ -12,15 +12,17 @@ body {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 0 5rem;
+  padding: 3rem 5rem;
 }
 
 h1{
+  padding: 2rem 0;
+  text-align: center;
   font-family: "Inspiration", cursive;
   color: var(--fs-02);
-  font-size: clamp(7rem, 10vw, 10rem);
+  font-size: clamp(8rem, 10vw, 10rem);
   filter: drop-shadow(var(--shadow));
-  padding-bottom: 2rem;
+  
 }
 
 h2 {
@@ -28,19 +30,19 @@ h2 {
     color: var(--fs-02);
     font-size: 8rem;
     filter: drop-shadow(var(--shadow));
-    padding-bottom: 2rem;
+    padding: 2rem 0;
   }
 
   h3 {
     color: var(--fs-02);
     font-size: 2rem;
     filter: drop-shadow(var(--shadow));
-    padding-bottom: 1rem;
+    padding: 1rem 0;
   }
 
 header {
   background-color: var(--bg-01);
-  padding: 2rem 5rem;
+  
 }
 
 header .container {
@@ -75,9 +77,10 @@ header .container nav ul li a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
   gap: 5rem;
   height: 50rem;
-  text-align: center;
+  
 }
 
 .sobre .container .profile img{
@@ -86,7 +89,8 @@ header .container nav ul li a:hover {
 }
 
 .sobre .container .descricao p {
-  width: 50rem;
+  
+  width: clamp(35rem, 50vw, 50rem);
 }
 
 
@@ -106,8 +110,8 @@ footer .container .icons{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
-    padding: 2rem 0;
+    gap: 3rem;
+    
 }
 
 .skills .container .icons span,
@@ -115,8 +119,8 @@ footer .container .icons a{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 7rem;
-    height: 7rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 2rem;
     background-color: var(--buton);
 }
@@ -124,7 +128,7 @@ footer .container .icons a{
 .skills .container .icons span i,
 footer .container .icons a i{
     color: var(--bg-02);
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 
@@ -132,7 +136,7 @@ footer .container .icons a i{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 3rem 0;
+    
 }
 
 .projetos .container .wrapper-projetos{
@@ -153,7 +157,8 @@ footer .container .icons a i{
     border-radius: 1rem;
     width: 34rem;
     height: 45rem;
-    padding: 3rem 0;
+    padding: 2rem;
+    
 }
 
 .projetos .container .wrapper-projetos .card-projetos .btn{
@@ -176,15 +181,15 @@ footer .container .icons a i{
 
 .projetos .container .wrapper-projetos .card-projetos .tecnologias{
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .projetos .container .wrapper-projetos .card-projetos .tecnologias span{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 1rem;
     background-color: var(--buton);
 
@@ -192,7 +197,7 @@ footer .container .icons a i{
 
 .projetos .container .wrapper-projetos .card-projetos span i{
     color: var(--bg-02);
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .projetos .container .wrapper-projetos .card-projetos .gif{
@@ -211,11 +216,12 @@ footer .container{
     align-items: center;
     justify-content: center;
     gap:1.5rem;
-    height:30rem;
-    padding: 2rem 0;
+    height:35rem;
+    
 }
 
 footer .container p{
+  text-align: center;
     font-size: 0.9rem;
     color: var(--fs-02);
 }
