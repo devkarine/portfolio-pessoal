@@ -17,7 +17,7 @@ Projeto realizado com o objetivo de criar um portfólio, para demonstrar minhas 
 ## 🖱️ A página
 <img src= " src/img/desktop-mobile.gif " alt="Gif exibindo o desktop e versão mobile do site">    
 
-> <a href="https://devkarine.github.io/portfolio-pessoal/" target= "_blank">Acesse a página online</a>  
+> <a href="https://karine-pereira.vercel.app/" target= "_blank">Acesse a página online</a>  
 
 
 ## 👩‍💻 Dev
