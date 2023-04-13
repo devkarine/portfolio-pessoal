@@ -2,7 +2,6 @@
 
 body {
   font-size: 1.5rem;
-  max-width: 1440px;
   min-height: 100vh;
   margin: 0 auto;
   background-color: var(--bg-02);
@@ -15,58 +14,32 @@ body {
   padding: 3rem 5rem;
 }
 
-h1{
+h1 {
   padding: 2rem 0;
   text-align: center;
   font-family: "Inspiration", cursive;
   color: var(--fs-02);
   font-size: clamp(8rem, 10vw, 10rem);
   filter: drop-shadow(var(--shadow));
-  
 }
 
 h2 {
-    font-family: "Inspiration", cursive;
-    color: var(--fs-02);
-    font-size: 8rem;
-    filter: drop-shadow(var(--shadow));
-    padding: 2rem 0;
-  }
-
-  h3 {
-    color: var(--fs-02);
-    font-size: 2rem;
-    filter: drop-shadow(var(--shadow));
-    padding: 1rem 0;
-  }
-
-header {
-  background-color: var(--bg-01);
-  
-}
-
-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-header .container .logo {
-  width: 15rem;
-}
-
-header .container nav ul {
-  display: flex;
-  gap: 2rem;
-}
-
-header .container nav ul li a:hover {
+  font-family: "Inspiration", cursive;
   color: var(--fs-02);
-  font-style: italic;
+  font-size: 8rem;
+  filter: drop-shadow(var(--shadow));
+  padding: 2rem 0;
 }
 
+h3 {
+  color: var(--fs-02);
+  font-size: 2rem;
+  filter: drop-shadow(var(--shadow));
+  padding: 1rem 0;
+}
 
 .hero .container {
+  margin-top: 10rem;
   height: 20rem;
   display: flex;
   justify-content: center;
@@ -80,148 +53,150 @@ header .container nav ul li a:hover {
   text-align: center;
   gap: 5rem;
   height: 50rem;
-  
 }
 
-.sobre .container .profile img{
-    width: 35rem;
-    
+.sobre .container .profile img {
+  width: 35rem;
 }
 
 .sobre .container .descricao p {
-  
   width: clamp(35rem, 50vw, 50rem);
 }
 
+@media(max-width: 980px){
+  .sobre .container {
+      height: 80rem;
+      display: flex;
+      flex-direction: column;
+    }
+}
 
-
-.skills .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 35rem;
-    
+.skills .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 35rem;
 }
 
 .skills .container .icons,
-footer .container .icons{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    
+footer .container .icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
-.skills .container .icons span,
-footer .container .icons a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 6rem;
-    height: 6rem;
-    border-radius: 2rem;
-    background-color: var(--buton);
+.skills .container .icons a,
+footer .container .icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 2rem;
+  background-color: var(--buton);
 }
 
-.skills .container .icons span i,
-footer .container .icons a i{
-    color: var(--bg-02);
-    font-size: 3.5rem;
+.skills .container .icons a:hover,
+footer .container .icons a:hover {
+  background-color: var(--hoover);
+  transform: scale(1.1);
 }
 
-
-.projetos .container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    
+.skills .container .icons a i,
+footer .container .icons a i {
+  color: var(--bg-02);
+  font-size: 3.5rem;
 }
 
-.projetos .container .wrapper-projetos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-
-}
-
-.projetos .container .wrapper-projetos .card-projetos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-    background-color: var(--bg-01);
-    border-radius: 1rem;
-    width: 34rem;
-    height: 45rem;
-    padding: 2rem;
-    
-}
-
-.projetos .container .wrapper-projetos .card-projetos .btn{
-    display: flex;
-    gap: 2rem;
-}
-
-.projetos .container .wrapper-projetos .card-projetos .btn a{
-    background-color: var(--buton);
-    color: var(--bg-02);
-    border-radius: 1rem;
-    width: 12rem;
-    text-align: center;
-    padding: 1rem;
-}
-
-.projetos .container .wrapper-projetos .card-projetos .btn a:hover{
-    background-color: var(--hoover);
-}
-
-.projetos .container .wrapper-projetos .card-projetos .tecnologias{
-    display: flex;
-    gap: 1.5rem;
-}
-
-.projetos .container .wrapper-projetos .card-projetos .tecnologias span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 1rem;
-    background-color: var(--buton);
-
-}
-
-.projetos .container .wrapper-projetos .card-projetos span i{
-    color: var(--bg-02);
-    font-size: 2.5rem;
-}
-
-.projetos .container .wrapper-projetos .card-projetos .gif{
-    border-radius: 1rem;
-    width: 30rem;
-    height: 20rem;
-}
-
-footer{
-    background-color: var(--bg-01);
-}
-
-footer .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap:1.5rem;
-    height:35rem;
-    
-}
-
-footer .container p{
+.projetos .container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-    font-size: 0.9rem;
-    color: var(--fs-02);
+}
+
+.projetos .container .wrapper-projetos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.projetos .container .wrapper-projetos .card-projetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  background-color: var(--bg-01);
+  border-radius: 1rem;
+  width: 34rem;
+  height: 45rem;
+  padding: 2rem;
+}
+
+.projetos .container .wrapper-projetos .card-projetos .btn {
+  display: flex;
+  gap: 2rem;
+}
+
+.projetos .container .wrapper-projetos .card-projetos .btn a {
+  background-color: var(--buton);
+  color: var(--bg-02);
+  border-radius: 1rem;
+  width: 12rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.projetos .container .wrapper-projetos .card-projetos .btn a:hover {
+  background-color: var(--hoover);
+  transform: scale(1.1);
+}
+
+.projetos .container .wrapper-projetos .card-projetos .tecnologias {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.projetos .container .wrapper-projetos .card-projetos .tecnologias span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: var(--buton);
+}
+
+.projetos .container .wrapper-projetos .card-projetos span i {
+  color: var(--bg-02);
+  font-size: 2.5rem;
+}
+
+.projetos .container .wrapper-projetos .card-projetos .gif {
+  border-radius: 1rem;
+  width: 30rem;
+  height: 20rem;
+}
+
+footer {
+  background-color: var(--bg-01);
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  height: 35rem;
+}
+
+footer .container p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--fs-02);
 }

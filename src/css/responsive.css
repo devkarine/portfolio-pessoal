@@ -1,8 +1,0 @@
-@media(max-width: 980px){
-    .sobre .container {
-        height: 80rem;
-        display: flex;
-        
-        flex-direction: column;
-      }
-}
