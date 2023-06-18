@@ -176,6 +176,11 @@ footer .container .icons a i {
   font-size: 2.5rem;
 }
 
+.projetos .container .wrapper-projetos .card-projetos span img {
+  filter: invert(100%);
+  width: 70%;
+}
+
 .projetos .container .wrapper-projetos .card-projetos .gif {
   border-radius: 1rem;
   width: 30rem;
